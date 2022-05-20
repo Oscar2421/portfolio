@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive PortFolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" language="javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Creating Menu Tabs & Logo at Top Using HTML -->
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Creating Banner Layout in HTML -->
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm<br> <span>Oscar A-C</span></h2>
+		   <h3>I'm a Front Web Developer.</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+
+    <!-- Creating About Me Layout in HTML -->
+    <section class="about" id="about">
+        <div class="heading">
+            <p>Get to Know me</p>
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="w50">
+                <img src="images/myPic4" alt="" class="proPic">
+            </div>
+            <div class="contentBx w50">
+                <h3>Who am i?</h3>
+                <h2>I'm <b>Oscar A-C</b>, a Visual UX/UI Designer and Web Developer</h2>
+				<p>I am adept in multiple coding languages including HMTL5, CSS, and JS.</p><br>
+				<p>I am a freelancer from Georgia with experience in multiple fields, including front end development, back end development, city development, audio engineering, and environmental design.</p>
+                <div class="heading bottom">
+                    <a href="images/resume.docx" class="btn round">Download Resume</a>
+                    <div class="bt">
+                       <b>Name:</b> Oscar A-C<br>
+						<b>Age:</b> 19
+					</div>
+					<div class="btn">
+						<b>Email:</b>oscarfake@gmail.com<br>
+						<b>Location:</b> Georgia
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Services Layout in HTML -->
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Our Services</h2>
+            <p>Services i Offer to my Clients</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <i class="fa fa-drupal fa-4x"></i>
+                <h3>Drupal Developer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fa fa-joomla fa-4x"></i>
+                <h3>Joomla Developer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fa fa-android fa-4x"></i>
+                <h3>Android Developer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fa fa-cart-arrow-down fa-4x"></i>
+                <h3>E-Commerce Project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Work Layout in HTML -->
+
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Our Latest Work</h2>
+            <p>Showcasing some of my <b>Github Work</b></p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <a href="https://oscar2421.github.io/movie-app/" target="_blank">
+                    <img src="images/Movie App (1).gif" alt="">
+                    <p>Movie App</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="https://oscar2421.github.io/expand-cards/" target="_blank">
+                    <img src="images/Expanding.gif" alt="">
+                    <p>Expanding Cards</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="https://oscar2421.github.io/blurry-image/" target="_blank">
+                    <img src="images/Blurry.gif" alt="">
+                    <p>Blurry Image</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="https://oscar2421.github.io/clock-theme/" target="_blank">
+                    <img src="images/Clocks.gif" alt="">
+                    <p>Clock Theme</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="https://oscar2421.github.io/dad-jk/" target="_blank">
+                    <img src="images/DadJokes.gif" alt="">
+                    <p>Dad Jokes</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="https://oscar2421.github.io/drink-water/" target="_blank">
+                    <img src="images/Meter Cups.gif"  alt="">
+                    <p>Cup Metter</p>
+                </a>
+            </div>
+            <div class="heading">
+                <a href="https://www.udemy.com/user/praveenkumar201/" target="_blank" class="btn" style="color:#fff;">View All My Courses</a>
+            </div>
+        </div>
+    </section>
+	
+    <!-- Creating Contact Layout in HTML -->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <p>Feel free to contact me anytimes</p>
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <p>Always available for freelance work if the right project<br> comes along, Feel free to contact me!</p>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Nila M Ackley,<br>4916 sideroad<br>Brooklyn, knwing,<br>SI, 73581</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone no :</h3>
+                            <p>705-250-2356</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email Address</h3>
+                            <p>oscarfake@gmail.com</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full Name" name="">
+                    <input type="email" placeholder="Email" name="">
+                    <textarea name="" rows="6" id="" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" name="">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Footer Layout in HTML -->
+    <footer class="copyright">
+        <p>&copy; 2020, Yourwebsite.com, Allrights reserved</p>
+    </footer>
+</body>
+</html>
